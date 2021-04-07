@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box; /* Поможет правильно считать высоту и ширину объектов */
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    display: flex; /* Выравнивает */
+    align-items: center; /* Выравнивает по центру */
+    padding-top: 20px; /* Делает отступ от верха */
+    padding-bottom: 20px; /* Делает отступ от низа */
+    padding-left: 32px; /* Отступ слева */
+    padding-right: 70px; /* Отступ справа */
+}
+.menu-button { /* Кнопка в левом верхнем углу */
+    padding: 0;
+    display: flex; /* Нужно для того чтобы элементы выстраивались по другому */
+    flex-direction: column; /* Выстраивает элементы в линию */
+    justify-content: space-between;
+    background-color: #fff;
+    width: 20px; /* ширина */
+    height: 17px; /* высота */
+    border: none; /* убирает бордер */
+    margin-right: 28px;
+    cursor: pointer;
+}
+.menu-line { /* линии кнопок в левом верхнем углу */
+    display: block; /* Поможет браузеру воспринимать как линия */
+    background: #1F2022;
+    width: 20px; /* ширина */
+    height: 3px; /* высота */
+    border-radius: 20px; /* Скругляет линии */
+}
+.logo {
+    margin-right: 59px;
+}
+.input-group {
+    background: #EBEBEB;
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 17px;
+    max-width: 830px;
+    width: 50%;
+}
+.input-search {
+    background-color: transparent; /* Делает фон прозрачным */
+    border: none;
+    padding: 12px;
+    padding-bottom: 12px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+.button-search {
+    padding: 0;
+    width: 19px;
+    height: 19px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.icon-search {
+    fill: black;
+}
+.icon-video {
+    opacity: 0.24; /* Задает прозрачность */
+}
+.icon-video:hover {
+    opacity: 0.8;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.icons-link {
+    text-decoration: none; /* убирает подчеркивание */
+    opacity: 0.24;
+}
+.icons-link:hover{
+    opacity: 0.7;
+}
+.icons-link:not(:last-child) { /* Выбираем все иконки кроме последней */
+    margin-right: 50px;
+}
+.user {
+    margin-left: 45px;
+}
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
